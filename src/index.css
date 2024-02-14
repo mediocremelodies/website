@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  max-width: 100%;
+}
+
+p {
+  font-size: large;
+  padding: 10px 0;
+}
+
+h4 {
+  font-weight: lighter;
+}
+
+
+.content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content > div {
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.content > .home {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/************ HOMEPAGE ************/
+
+.home-welcome {
+  height: 50vh;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-welcome h1{
+  font-size: 4.5em;
+}
+
+.home-welcome .average-text {
+  font-size: 0.5em;
+}
+
+.home-welcome span {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.home-welcome h2{
+  font-size: 2.8em;
+  font-weight: normal;
+}
+
+.home-welcome .arrow-down-icon{
+  width: 70px;
+  height: 70px;
+}
+
+.home-welcome .arrow-down{
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.home-welcome .apply-now{
+  font-weight: bold;
+  cursor: pointer;
+  font-size: large;
+  margin: 30px 0;
+  width: 200px;
+  height: 50px;
+  background-color:cornflowerblue;
+  border: none;
+  border-radius: 12.5px;
+}
+
+.home-welcome .apply-now:hover{
+  opacity: 1;
+  border: 1px solid black;
+}
+
+.home-welcome .the-text{
+  font-weight: normal;
+}
+
+.concert-video {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-welcome .apply-now{
+    margin: 30px auto;
+  }
+}
+
+/************ NAVBAR ************/
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 850px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  cursor: pointer;
+  width: 400px;
+  max-width: 80%;
+  margin-right: auto;
+}
+
+.links a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-size: large;
+}
+
+.drawer-links .links {
+  display: grid;
+}
+
+.drawer-links .links a {
+  padding: 15px 0px;
+}
+
+.drawer-links {
+  padding: 0px 20px;
+}
+
+.links a:hover {
+  color: cornflowerblue;
+}
+
+@media only screen and (max-width: 900px) {
+
+
+  .home-welcome h1{
+    font-size: calc(4.5vw + 25px);
+  }
+  
+  .home-welcome h2{
+    font-size: calc(3.5vw + 15px);
+    font-weight: normal;
+  }
+
+  img.home-icon {
+    height: 75px;
+    width: 75px;
+  }
+
+  .footer-basic ul.list-inline {
+    display: inline;
+    text-align: center;
+  }
+
+}
+@media only screen and (max-width: 450px) {
+  img.member-headshot{
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+/************ MemberGroup ************/
+
+.members-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.members-visit-alumni {
+  display: flex;
+  cursor: pointer;
+  grid-column-gap: 10px;
+  align-items: center;
+}
+
+.members-visit-alumni h2 {
+  font-weight: normal;
+}
+
+.member-group-members {
+  justify-content: space-around; 
+  display: inline-flex;
+  flex-wrap: wrap;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding-top: 15px;
+}
+
+.member-group {
+  padding-top: 40px;
+}
+
+/************ MemberSquare ************/
+
+.member-headshot {
+  width: 200px;
+  height: 200px;
+}
+
+.member-detail-headshot {
+  width: 400px;
+}
+
+.member-detail-square {
+  width: 600px;
+  position: relative;
+  display: inline-block;
+}
+
+.member-detail-square h2 {
+  font-weight: normal;
+}
+
+.member-details {
+  text-align: center;
+}
+
+.member-details .back-arrow {
+  border-radius: 25px;
+  background-color: white;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.member-details .spacer{
+  width: 50px;
+  height: 50px;
+}
+
+/************ HOMEICONS ************/
+
+.home-icon-figure {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.home-group {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-grouping {
+  display: flex;
+  align-items: center;
+}
+
+.home-image {
+  width: 200px;
+  padding: 2px;
+}
+
+.home-icon {
+  height: 100px;
+  width: 100px;
+}
+
+h2.home-icon-number {
+  font-weight: normal;
+  padding-top: 20px;
+}
+
+h3.home-icon-desc {
+  font-weight: normal;
+  color:grey;
+  padding: 10px 0;
+}
+
+
+/* footer */
+
+.footer-basic {
+  border-top: 1px solid #f2f2f2;
+  padding:40px 0;
+  background-color:#ffffff;
+}
+
+.footer-basic ul {
+  padding:0;
+  justify-content: center;
+  display: flex;
+  list-style:none;
+  font-size:larger;
+}
+
+.footer-basic li {
+  padding:5px 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.7;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:larger;
+  width:50px;
+  height:50px;
+  display:inline-block;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.7;
+}
+
+.footer-basic .social > a:hover {
+  opacity:1;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:medium;
+  color:#aaa;
+}
+
+.footer-basic .social-icon {
+  height: 25px;
+  /* TODO: hacky fix for centering */
+  padding: 12.5px 0px;
+}
+
+.footer-basic .social-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/************ APPLYPAGE ************/
+
+.apply-notice {
+  padding-bottom: 50px;
+}
+
+/************ OTHER ************/
+
+
+.back-arrow {
+  width: 50px;
+  height: 50px;
+}
+
+.chevron {
+  width: 25px;
+  height: 25px;
+}
+
+
+

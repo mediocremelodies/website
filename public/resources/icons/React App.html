@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:3000/members -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);</style><style>/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  max-width: 100%;
+}
+
+.content {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/************ NAVBAR ************/
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 850px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  width: 300px;
+  cursor: pointer;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+
+/************ MemberGroup ************/
+
+.member-group-members {
+  justify-content: space-around; 
+  display: inline-flex;
+  flex-wrap: wrap;
+  grid-column-gap: 10px;
+  column-gap: 10px;
+}
+
+.member-group {
+  padding: 40px 0 0 0;
+}
+
+/************ MemberSquare ************/
+
+.member-headshot {
+  width: 275px;
+  height: 275px;
+}
+
+/************ HOMEICONS ************/
+
+.home-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.home-icon-figure {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.home-icon-group {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-icon-grouping {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h2.home-icon-number {
+  font-weight: normal;
+  padding-top: 20px;
+}
+
+h3.home-icon-desc {
+  font-weight: normal;
+  color:grey;
+  padding: 10px 0;
+}
+
+/************ OTHER ************/
+
+.back-arrow {
+  width: 50px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLGdCQUFnQjtBQUNoQjtFQUNFLFNBQVM7RUFDVCx3QkFBd0I7RUFDeEIsV0FBVztFQUNYLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUEsaUNBQWlDOztBQUVqQztFQUNFLGFBQWE7RUFDYixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGdCQUFnQjtFQUNoQixjQUFjO0VBQ2QsZ0NBQWdDO0VBQ2hDLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixxQkFBcUI7RUFDckIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQSxzQ0FBc0M7O0FBRXRDO0VBQ0UsNkJBQTZCO0VBQzdCLG9CQUFvQjtFQUNwQixlQUFlO0VBQ2YscUJBQWdCO0VBQWhCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQSx1Q0FBdUM7O0FBRXZDO0VBQ0UsWUFBWTtFQUNaLGFBQWE7QUFDZjs7QUFFQSxvQ0FBb0M7O0FBRXBDO0VBQ0UsYUFBYTtFQUNiLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsYUFBYTtFQUNiLGVBQWU7RUFDZix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsZUFBZTtFQUNmLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGVBQWU7QUFDakI7O0FBRUEsZ0NBQWdDOztBQUVoQztFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2QiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybCgnaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1RdWlja3NhbmQ6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmRpc3BsYXk9c3dhcCcpO1xuXG4vKiBiYXNlIHN0eWxlcyAqL1xuKiB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IFwiUXVpY2tzYW5kXCI7XG4gIGNvbG9yOiAjMzMzO1xuICBtYXgtd2lkdGg6IDEwMCU7XG59XG5cbi5jb250ZW50IHtcbiAgbWF4LXdpZHRoOiA4NTBweDtcbiAgbWFyZ2luOiA0MHB4IGF1dG87XG4gIHBhZGRpbmc6IDIwcHg7XG59XG5cbi5jbGlja2FibGUge1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi8qKioqKioqKioqKiogTkFWQkFSICoqKioqKioqKioqKi9cblxuLm5hdmJhciB7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIG1heC13aWR0aDogODUwcHg7XG4gIG1hcmdpbjogMCBhdXRvO1xuICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2YyZjJmMjtcbiAgZmxleC13cmFwOiB3cmFwO1xufVxuXG4ubmF2YmFyLWxvZ28ge1xuICB3aWR0aDogMzAwcHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLm5hdmJhciAubGlua3Mge1xuICBtYXJnaW4tbGVmdDogYXV0bztcbn1cblxuLm5hdmJhciBhIHtcbiAgbWFyZ2luLWxlZnQ6IDE2cHg7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgcGFkZGluZzogNnB4O1xufVxuXG4ubmF2YmFyIGE6aG92ZXIge1xuICBjb2xvcjogI2YxMzU2ZDtcbn1cblxuLyoqKioqKioqKioqKiBNZW1iZXJHcm91cCAqKioqKioqKioqKiovXG5cbi5tZW1iZXItZ3JvdXAtbWVtYmVycyB7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kOyBcbiAgZGlzcGxheTogaW5saW5lLWZsZXg7XG4gIGZsZXgtd3JhcDogd3JhcDtcbiAgY29sdW1uLWdhcDogMTBweDtcbn1cblxuLm1lbWJlci1ncm91cCB7XG4gIHBhZGRpbmc6IDQwcHggMCAwIDA7XG59XG5cbi8qKioqKioqKioqKiogTWVtYmVyU3F1YXJlICoqKioqKioqKioqKi9cblxuLm1lbWJlci1oZWFkc2hvdCB7XG4gIHdpZHRoOiAyNzVweDtcbiAgaGVpZ2h0OiAyNzVweDtcbn1cblxuLyoqKioqKioqKioqKiBIT01FSUNPTlMgKioqKioqKioqKioqL1xuXG4uaG9tZS1pY29uIHtcbiAgaGVpZ2h0OiAxMDBweDtcbiAgd2lkdGg6IDEwMHB4O1xufVxuXG4uaG9tZS1pY29uLWZpZ3VyZSB7XG4gIHBhZGRpbmc6IDEwcHggMjBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uaG9tZS1pY29uLWdyb3VwIHtcbiAgcGFkZGluZzogMzBweCAwO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4uaG9tZS1pY29uLWdyb3VwaW5nIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC13cmFwOiB3cmFwO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG5oMi5ob21lLWljb24tbnVtYmVyIHtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgcGFkZGluZy10b3A6IDIwcHg7XG59XG5cbmgzLmhvbWUtaWNvbi1kZXNjIHtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgY29sb3I6Z3JleTtcbiAgcGFkZGluZzogMTBweCAwO1xufVxuXG4vKioqKioqKioqKioqIE9USEVSICoqKioqKioqKioqKi9cblxuLmJhY2stYXJyb3cge1xuICB3aWR0aDogNTBweDtcbiAgaGVpZ2h0OiA1MHB4O1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><script charset="utf-8" src="./React App_files/main.619b01b16c6d7ca91f5c.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.8f97d0ea0d520ba7a98f.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.e4977c556261bc7b277e.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.e2817913a93a29ab84fd.hot-update.js"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><nav class="navbar"><img class="navbar-logo" src="./React App_files/logo.png"><div class="links"><a href="http://localhost:3000/">Home</a><a href="http://localhost:3000/members">Meet the Group</a><a href="http://localhost:3000/apply">Apply</a></div></nav><div class="content"><div class="create"><h1>Meet the Group</h1><div class="members-about"><p>Established in the Spring of 2018, The Mediocre Melodies is an a cappella group that prides itself on being the worst a cappella group on campus. The group is comprised of individuals with singing ability ranging from "please stop" to "that doesn't sound too bad". The Mediocre Melodies is a growing club that connects over humor and a passion for mediocrity.</p></div><div class="voice-groups" style="
+    row-gap: 100px;
+"><div class="member-group"><h2>People who sing low</h2><div class="member-group-members"><div class="member-square clickable"><img class="member-headshot" src="./React App_files/coa22.JPG"><h3>Obi Abii</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/bo92.JPG"><h3>Brennan O'Connor</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/jsc346.JPG"><h3>Jack Callard</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/bho8.JPG"><h3>Ben Owino</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/dgb222.JPG"><h3>Daniel Bernstein</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/sdf64.JPG"><h3>Stu Feng</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/ao274.JPG"><h3>Aidan O'Connor</h3><h4>2024</h4></div></div></div><div class="member-group"><h2>People who sing medium-low</h2><div class="member-group-members"><div class="member-square clickable"><img class="member-headshot" src="./React App_files/ejw232.JPG"><h3>Eitan Wolf</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/abr92.JPG"><h3>Abe Reiss</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/tea45.JPG"><h3>Lola Adepoju</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/sjf238.JPG"><h3>Sam Fuqua</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/crr98.JPG"><h3>Tina Rivara</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/dp566.JPG"><h3>Devin Perlo</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/hlm87.JPG"><h3>Horacio Montes</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/jit24.JPG"><h3>Jalen Thomas</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/syl59.JPG"><h3>Sam Lee</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/scc242.JPG"><h3>Seanie Clark</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/jmg575.JPG"><h3>Jett Gemmer</h3><h4>2024</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/jjd273.JPG"><h3>Juan Delgado</h3><h4>2024</h4></div></div></div><div class="member-group"><h2>People who sing medium-high</h2><div class="member-group-members"><div class="member-square clickable"><img class="member-headshot" src="./React App_files/dmg349.JPG"><h3>Dani Gonzalez</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/erm252.JPG"><h3>Elizabeth Magie</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/mgk62.JPG"><h3>Madison Kelly</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/asz36.JPG"><h3>Annie Zomback</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/cbs265.JPG"><h3>Celia Shapiro</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/erk93.JPG"><h3>Ella Knibb</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/ino5.JPG"><h3>Isabel O'Connell</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/eja83.JPG"><h3>Lizzy Auwaerter</h3><h4>2024</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/ped53.JPG"><h3>Paige Dalrymple</h3><h4>2024</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/tvf6.JPG"><h3>Tess Fuqua</h3><h4>2024</h4></div></div></div><div class="member-group"><h2>People who sing high</h2><div class="member-group-members"><div class="member-square clickable"><img class="member-headshot" src="./React App_files/el543.JPG"><h3>Emily Logan</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/ecs254.JPG"><h3>Emma Sbrollini</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/lcl66.JPG"><h3>Lydia LaGorga</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/snt32.JPG"><h3>Steph Terhaar</h3><h4>2022</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/acl97.JPG"><h3>Abby Levin</h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/ek487.JPG"><h3>Evelyn Kluemper </h3><h4>2023</h4></div><div class="member-square clickable"><img class="member-headshot" src="./React App_files/hf254.JPG"><h3>Hannah Fuchs</h3><h4>2023</h4></div></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js"></script><script src="./React App_files/vendors_main.chunk.js"></script><script src="./React App_files/main.chunk.js"></script>
+
+</body></html>
