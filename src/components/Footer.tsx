@@ -15,15 +15,14 @@ class Footer extends React.Component<RouteComponentProps> {
                         <a href="https://www.instagram.com/themediocremelodies" target="_blank" rel="noreferrer" className="social-icon-circle">
                             <img src="/resources/icons/instagram.png" alt="Instagram Icon" className="social-icon icon-instagram" />
                         </a>
-                        <a href="https://www.linkedin.com/in/jackcallard/" target="_blank" rel="noreferrer" className="social-icon-circle">
-                            <img src="/resources/icons/linkedin.png" alt="LinkedIn Icon" className="social-icon icon-linkedin" />
-                        </a>
+                        
                     </div>
                     <ul className="list-inline">
                         <li className="list-inline-item"><Link to="/">Home</Link></li>
                         <li className="list-inline-item"><Link to="/members">Meet the Group</Link></li>
                         <li className="list-inline-item"><Link to="/apply">Apply</Link></li>
                     </ul>
+                    <p className="copyright">Registered Student Organization of Cornell University</p>
                     <p className="copyright">The Mediocre Melodies</p>
                 </footer>
             </div >
