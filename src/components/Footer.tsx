@@ -1,33 +1,62 @@
-import React from 'react';
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom';
-
+import React from "react";
+import { Link, RouteComponentProps, withRouter } from "react-router-dom";
 
 class Footer extends React.Component<RouteComponentProps> {
-
-    render() {
-        return (
-            <div className="footer-basic">
-                <footer>
-                    <div className="social">
-                        <a href="https://www.youtube.com/channel/UCOC5F8S88nD56j_D_PPDgMg/featured" target="_blank" rel="noreferrer" className="social-icon-circle">
-                            <img src="/resources/icons/youtube.png" alt="Youtube Icon" className="social-icon icon-youtube" />
-                        </a>
-                        <a href="https://www.instagram.com/themediocremelodies" target="_blank" rel="noreferrer" className="social-icon-circle">
-                            <img src="/resources/icons/instagram.png" alt="Instagram Icon" className="social-icon icon-instagram" />
-                        </a>
-                        
-                    </div>
-                    <ul className="list-inline">
-                        <li className="list-inline-item"><Link to="/">Home</Link></li>
-                        <li className="list-inline-item"><Link to="/members">Meet the Group</Link></li>
-                        <li className="list-inline-item"><Link to="/apply">Apply</Link></li>
-                    </ul>
-                    <p className="copyright">Registered Student Organization of Cornell University</p>
-                    <p className="copyright">The Mediocre Melodies</p>
-                </footer>
-            </div >
-        );
-    }
+  render() {
+    return (
+      <div className="footer-basic">
+        <footer>
+          <div className="social">
+            <a
+              href="https://www.youtube.com/channel/UCOC5F8S88nD56j_D_PPDgMg/featured"
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon-circle"
+            >
+              <img
+                src="/resources/icons/youtube.png"
+                alt="Youtube Icon"
+                className="social-icon icon-youtube"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/themediocremelodies"
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon-circle"
+            >
+              <img
+                src="/resources/icons/instagram.png"
+                alt="Instagram Icon"
+                className="social-icon icon-instagram"
+              />
+            </a>
+          </div>
+          <ul className="list-inline">
+            <li className="list-inline-item">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="list-inline-item">
+              <Link to="/members">Meet the Group</Link>
+            </li>
+            <li className="list-inline-item">
+              <Link to="/apply">Apply</Link>
+            </li>
+          </ul>
+          <p className="copyright">
+            Equal Education and Employment:{" "}
+            <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">
+              Statement
+            </a>
+          </p>
+          <p className="copyright">
+            Registered Student Organization of Cornell University
+          </p>
+          <p className="copyright">The Mediocre Melodies</p>
+        </footer>
+      </div>
+    );
+  }
 }
 
 export default withRouter(Footer);
